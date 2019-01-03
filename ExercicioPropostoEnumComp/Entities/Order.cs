@@ -35,8 +35,14 @@ namespace ExercicioPropostoEnumComp.Entities
 
         public double Total()
         {
-            
-            
+            double sum = 0;
+
+            foreach (OrderItem item in Items)
+            {
+                sum += item.SubTotal();
+            }
+
+            return sum;
         }
 
 

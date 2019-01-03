@@ -14,10 +14,11 @@ namespace ExercicioPropostoEnumComp.Entities
         {
         }
 
-        public OrderItem(int quantity)
+        public OrderItem(int quantity, double price, Product product)
         {
             this.Quantity = quantity;
-            this.Price = Product.Price;
+            this.Price = price;
+            this.Product = product;
         }
 
         public double SubTotal()
